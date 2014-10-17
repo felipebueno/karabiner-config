@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>FB - command+h to delete backward</name>FB - 
+    <identifier>felipebueno.backspace</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::H, VK_COMMAND,
+      KeyCode::DELETE
+    </autogen>
+  </item>
+
+  <item>
+    <name>FB - command+d to delete forward</name>FB - 
+    <identifier>felipebueno.delete</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::D, VK_COMMAND,
+      KeyCode::DELETE, ModifierFlag::FN
+    </autogen>
+  </item>
+
+  <item>
+    <name>FB - command+option_l+h delete whole word</name>FB - 
+    <identifier>felipebueno.fds</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::H, ModifierFlag::OPTION_L | VK_COMMAND,
+      KeyCode::DELETE, ModifierFlag::SHIFT_L | ModifierFlag::OPTION_L
+    </autogen>
+  </item>
+
+  <item>
+    <name>FB - Disable Delete</name>FB - 
+    <identifier>felipebueno.drop_delete</identifier>
+    <autogen>__KeyToKey__ KeyCode::DELETE, KeyCode::VK_NONE</autogen>
+  </item>
+
+  <item>
+    <name>FB - Swap Command_L with Control_L (Terminal)</name>FB - 
+    <identifier>felipebueno.app_term_commandL2controlL</identifier>
+    <only>TERMINAL</only>
+    <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::CONTROL_L, KeyCode::COMMAND_L</autogen>
+  </item>
+
+  <item>
+    <name>FB - Swap Command_L with Control_L (Emacs)</name>FB - 
+    <identifier>felipebueno.app_emacs_commandL2controlL</identifier>
+    <only>EMACS</only>
+    <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::CONTROL_L, KeyCode::COMMAND_L</autogen>
+  </item>
+
+  <item>
+    <name>FB - Force change C-i to Tab</name>FB - 
+    <item>
+      <name>FB - In Emacs, Terminal</name>FB - 
+      <identifier>felipebueno.emacsmode_force_controlI_term</identifier>
+      <only>EMACS, TERMINAL</only>
+      <autogen>__KeyToKey__ KeyCode::I, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::TAB</autogen>
+    </item>
+
+    <item>
+      <name>FB - In Eclipse</name>FB - 
+      <identifier>felipebueno.emacsmode_force_controlI_eclipse</identifier>
+      <only>ECLIPSE</only>
+      <autogen>__KeyToKey__ KeyCode::I, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::TAB</autogen>
+    </item>
+  </item>
+  
+</root>
