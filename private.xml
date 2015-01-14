@@ -1,6 +1,15 @@
 <?xml version="1.0"?>
 <root>
-  <item>
+    <item>
+    <name>FB - command+j send return (enter)</name>FB - 
+    <identifier>felipebueno.return</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::J, VK_COMMAND,
+      KeyCode::RETURN
+    </autogen>
+  </item>
+ <item>
     <name>FB - command+h to delete backward</name>FB - 
     <identifier>felipebueno.backspace</identifier>
     <autogen>
